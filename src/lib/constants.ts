@@ -124,7 +124,7 @@ export const WRITING_TOPICS = [
     title: "Context-Aware Data Ecosystems",
     summary:
       "Designing data systems that understand context, not just store records. Making data work harder.",
-    href: "#",
+    href: "https://www.linkedin.com/pulse/context-aware-data-ecosystems-efren-macasaet-gswwc",
   },
   {
     title: "Governance as Leverage",
