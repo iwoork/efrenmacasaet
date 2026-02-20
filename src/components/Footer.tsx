@@ -10,7 +10,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href={`mailto:hello@efrenmacasaet.com`}
+            href={`mailto:efren@iwoork.com`}
             className="inline-flex items-center rounded-lg bg-[var(--color-accent)] px-6 py-3 text-sm font-medium text-[var(--color-bg)] transition-colors duration-200 hover:bg-[var(--color-text-primary)]"
           >
             Let&apos;s Build
