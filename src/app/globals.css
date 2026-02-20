@@ -67,6 +67,11 @@ body {
   transform: translateY(0);
 }
 
+/* Offset scroll targets below fixed header */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 /* Selection color */
 ::selection {
   background-color: var(--color-accent-blue);

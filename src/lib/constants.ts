@@ -27,7 +27,7 @@ export const HERO = {
 
 export const FOUNDER_NARRATIVE = {
   title: "From Enterprise Scale to Founder Execution",
-  companies: ["Expedia Group", "Walmart", "CNN"],
+  companies: ["Expedia Group", "Walmart", "CNN", "Shutterstock"],
   narrative:
     "Inside these environments, he led large-scale system initiatives, solved complex platform challenges, and aligned cross-functional teams.",
   founderQualities: [
@@ -85,7 +85,19 @@ export const ENTERPRISE_EXPERIENCE = [
     summary:
       "Operated in high-traffic, media-scale systems where resilience and uptime are critical.",
   },
+  {
+    company: "Shutterstock",
+    summary:
+      "Contributed to content platform systems powering one of the world's largest creative marketplaces.",
+  },
 ] as const;
+
+export const GLOBAL_EXPERIENCE = {
+  title: "Global Experience",
+  subtitle:
+    "Building products and leading teams across international markets — adapting to diverse cultures, regulations, and user expectations.",
+  cities: ["Singapore", "Hong Kong", "London", "Toronto", "Vancouver"],
+} as const;
 
 export const PRINCIPLES = [
   "AI must increase clarity, not hallucinate confidence.",

@@ -22,7 +22,7 @@
 - [x] Performance optimization (image optimization, static generation, lazy loading)
 - [ ] Lighthouse audit and fix issues to achieve score > 90
 - [ ] Set up blog-ready content structure (MDX or CMS integration prep)
-- [ ] Add responsive refinements (mobile menu, touch interactions)
+- [x] Add responsive refinements (mobile menu, touch interactions)
 - [ ] Favicon and social share image assets
 - [ ] Accessibility audit (keyboard nav, screen reader, contrast)
 
@@ -39,6 +39,9 @@
 - [x] Smooth scroll via CSS scroll-behavior
 - [x] JSON-LD Person structured data
 - [x] SEO: meta tags, OG tags, Twitter cards, keywords, robots
+- [x] Sticky Header with desktop nav links and mobile hamburger overlay menu
+- [x] Active section highlighting via Intersection Observer
+- [x] scroll-margin-top for fixed header offset on anchor navigation
 
 ## Notes
 - Design inspiration: Vercel, Linear, premium YC founder sites
