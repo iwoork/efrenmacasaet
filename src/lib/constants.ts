@@ -29,7 +29,7 @@ export const FOUNDER_NARRATIVE = {
   title: "From Enterprise Scale to Founder Execution",
   companies: ["Expedia Group", "Walmart", "CNN", "Shutterstock"],
   narrative:
-    "Inside these environments, he led large-scale system initiatives, solved complex platform challenges, and aligned cross-functional teams.",
+    "Inside these environments, I led large-scale system initiatives, solved complex platform challenges, and aligned cross-functional teams.",
   founderQualities: [
     "High-trust",
     "Explainable",

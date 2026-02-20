@@ -35,7 +35,7 @@ export default function FounderNarrative() {
               Founder Execution
             </p>
             <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
-              Now he builds AI-powered products that are:
+              Now I build AI-powered products that are:
             </p>
             <ul className="mt-4 space-y-3">
               {FOUNDER_NARRATIVE.founderQualities.map((quality) => (
