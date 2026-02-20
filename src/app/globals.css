@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color Palette — Dark Theme */
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-hover: #1A1A1A;
+  --color-border: #262626;
+  --color-text-primary: #EDEDED;
+  --color-text-secondary: #A1A1A1;
+  --color-accent: #FFFFFF;
+  --color-accent-blue: #3B82F6;
+
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Animation */
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
+  --animate-fade-in-up-delay-1: fade-in-up 0.6s ease-out 0.15s forwards;
+  --animate-fade-in-up-delay-2: fade-in-up 0.6s ease-out 0.3s forwards;
+  --animate-fade-in-up-delay-3: fade-in-up 0.6s ease-out 0.45s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal animation — applied via JS */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-accent-blue);
+  color: var(--color-accent);
+}
