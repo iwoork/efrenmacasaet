@@ -2,9 +2,9 @@
 
 export const SITE = {
   name: "Efren Macasaet",
-  title: "Efren Macasaet — Founder & AI Systems Builder",
+  title: "Efren Macasaet — AI Product & Engineering Leader",
   description:
-    "Founder, product architect, and AI systems builder. Enterprise experience at Expedia, Walmart, and CNN. Now building intelligent, high-trust AI products.",
+    "AI product and engineering leader building intelligent systems at scale. Expertise in LLMs, RAG, AI agents, and scalable SaaS platforms. Enterprise experience at Expedia, Walmart, CNN, and Shutterstock. Now founding AI-powered products.",
   url: "https://efrenmacasaet.com",
   linkedin: "https://linkedin.com/in/efrenmacasaet",
   github: "https://github.com/efrenmacasaet",
