@@ -33,6 +33,26 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Efren Macasaet",
+  jobTitle: "Founder & AI Systems Builder",
+  description:
+    "Founder, product architect, and AI systems builder with enterprise experience at Expedia, Walmart, and CNN.",
+  url: "https://efrenmacasaet.com",
+  sameAs: [
+    "https://linkedin.com/in/efrenmacasaet",
+    "https://github.com/efrenmacasaet",
+  ],
+  knowsAbout: [
+    "AI System Architecture",
+    "Retrieval-Augmented Generation",
+    "Platform Strategy",
+    "Scalable SaaS Architecture",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -40,6 +60,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

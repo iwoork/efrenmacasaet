@@ -6,18 +6,33 @@ import HowIThink from "@/components/HowIThink";
 import WritingInsights from "@/components/WritingInsights";
 import CoreCompetencies from "@/components/CoreCompetencies";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <FounderNarrative />
-      <WhatIBuild />
-      <EnterpriseExperience />
-      <HowIThink />
-      <WritingInsights />
-      <CoreCompetencies />
-      <Footer />
+      <ScrollReveal>
+        <FounderNarrative />
+      </ScrollReveal>
+      <ScrollReveal>
+        <WhatIBuild />
+      </ScrollReveal>
+      <ScrollReveal>
+        <EnterpriseExperience />
+      </ScrollReveal>
+      <ScrollReveal>
+        <HowIThink />
+      </ScrollReveal>
+      <ScrollReveal>
+        <WritingInsights />
+      </ScrollReveal>
+      <ScrollReveal>
+        <CoreCompetencies />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Footer />
+      </ScrollReveal>
     </main>
   );
 }
