@@ -67,6 +67,20 @@ export const PROJECTS = [
     ],
     role: "Founder & Product Architect",
   },
+  {
+    name: "CoffeeBrewNotes.com",
+    url: "https://coffeebrewnotes.com",
+    description:
+      "Mobile-first brewing journal and analytics platform for home coffee enthusiasts — log brews in seconds and discover what makes your best cups great.",
+    capabilities: [
+      "Quick brew logging with smart defaults and grinder memory",
+      "Bean library with roast dates, freshness tracking, and brew history",
+      "Analytics dashboard with heatmaps, score trends, and bean leaderboards",
+      "Built-in timer with lap support and method-specific presets",
+      "Offline-first architecture with automatic sync",
+    ],
+    role: "Founder & Product Architect",
+  },
 ] as const;
 
 export const ENTERPRISE_EXPERIENCE = [
