@@ -1,4 +1,4 @@
-import { GLOBAL_EXPERIENCE } from "@/lib/constants";
+import { GLOBAL_EXPERIENCE, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function GlobalExperience() {
   return (
@@ -8,7 +8,7 @@ export default function GlobalExperience() {
           {GLOBAL_EXPERIENCE.title}
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          {GLOBAL_EXPERIENCE.subtitle}
+          {SECTION_SUMMARIES.globalExperience}
         </p>
 
         <div className="mt-12 flex flex-wrap gap-4">

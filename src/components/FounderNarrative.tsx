@@ -1,4 +1,4 @@
-import { FOUNDER_NARRATIVE } from "@/lib/constants";
+import { FOUNDER_NARRATIVE, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function FounderNarrative() {
   return (
@@ -7,6 +7,9 @@ export default function FounderNarrative() {
         <h2 className="text-3xl font-bold tracking-tight text-[var(--color-accent)] sm:text-4xl">
           {FOUNDER_NARRATIVE.title}
         </h2>
+        <p className="mt-4 text-base text-[var(--color-text-secondary)]">
+          {SECTION_SUMMARIES.founderNarrative}
+        </p>
 
         <div className="mt-12 grid gap-12 lg:grid-cols-2">
           {/* Enterprise credentials */}

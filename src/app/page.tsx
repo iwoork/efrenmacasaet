@@ -7,6 +7,7 @@ import GlobalExperience from "@/components/GlobalExperience";
 import HowIThink from "@/components/HowIThink";
 import WritingInsights from "@/components/WritingInsights";
 import CoreCompetencies from "@/components/CoreCompetencies";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -36,6 +37,9 @@ export default function Home() {
         </ScrollReveal>
         <ScrollReveal>
           <CoreCompetencies />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FAQ />
         </ScrollReveal>
         <ScrollReveal>
           <Footer />

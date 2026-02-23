@@ -1,4 +1,4 @@
-import { PROJECTS } from "@/lib/constants";
+import { PROJECTS, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function WhatIBuild() {
   return (
@@ -8,17 +8,20 @@ export default function WhatIBuild() {
           What I Build
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          Founder-built AI products — from zero to production.
+          {SECTION_SUMMARIES.whatIBuild}
         </p>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {PROJECTS.map((project) => (
-            <div
+            <article
               key={project.name}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold text-[var(--color-accent)]">
+                <h3
+                  id={`project-${project.name.toLowerCase().replace(/\./g, "-")}`}
+                  className="text-xl font-semibold text-[var(--color-accent)]"
+                >
                   {project.name}
                 </h3>
                 <a
@@ -50,7 +53,7 @@ export default function WhatIBuild() {
               <p className="mt-6 text-xs font-medium uppercase tracking-widest text-[var(--color-text-secondary)]">
                 {project.role}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

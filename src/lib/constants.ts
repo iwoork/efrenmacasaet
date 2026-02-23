@@ -176,3 +176,58 @@ export const COMPETENCIES = [
   "Scalable SaaS Architecture",
   "Product Vision & Execution",
 ] as const;
+
+export const FAQ_ITEMS = [
+  {
+    question: "What does Efren Macasaet specialize in?",
+    answer:
+      "Efren Macasaet specializes in AI product development and systems architecture, with deep expertise in large language models (LLMs), retrieval-augmented generation (RAG), AI agents, and scalable SaaS platforms. He combines enterprise engineering experience with founder execution to build intelligent systems at scale.",
+  },
+  {
+    question: "What products has Efren Macasaet built?",
+    answer:
+      "Efren has founded and built several AI-powered products: SearchStrata.com, an AI-powered strata document analysis platform; HomeForPup.com, a community-driven platform for pet owners and breeders; CoffeeBrewNotes.com, a mobile-first brewing journal and analytics platform; and ExpatHelpers.com, a resource platform for expats navigating relocation abroad.",
+  },
+  {
+    question: "What is his approach to AI development?",
+    answer:
+      "Efren builds AI systems that are high-trust, explainable, and structured. He believes AI must increase clarity rather than hallucinate confidence, and designs citation-backed responses for trust and explainability. Every system is architected to be scalable from day one.",
+  },
+  {
+    question: "Where has Efren Macasaet worked?",
+    answer:
+      "Efren has enterprise experience at Expedia Group, Walmart, CNN, and Shutterstock, where he led large-scale platform initiatives across distributed systems and data ecosystems. He has built products and led teams across Singapore, Hong Kong, London, Toronto, and Vancouver.",
+  },
+  {
+    question: "What is SearchStrata.com?",
+    answer:
+      "SearchStrata.com is an AI-powered strata (condominium) document analysis platform that helps buyers and property owners understand complex strata packages. It uses RAG to extract financial health indicators, flag litigation risks, analyze insurance coverage, and provide citation-backed AI Q&A over uploaded documents.",
+  },
+  {
+    question: "What are Efren Macasaet's core competencies?",
+    answer:
+      "His core competencies include AI System Architecture, Retrieval-Augmented Generation (RAG), Structured Document Intelligence, Platform Strategy, Enterprise-to-Startup Translation, Explainable AI Design, Scalable SaaS Architecture, and Product Vision & Execution.",
+  },
+  {
+    question: "How can you contact Efren Macasaet?",
+    answer:
+      "You can reach Efren Macasaet via email at efren@iwoork.com or connect with him on LinkedIn at linkedin.com/in/efrenmacasaet. His open-source work is available on GitHub at github.com/efrenmacasaet.",
+  },
+] as const;
+
+export const SECTION_SUMMARIES = {
+  founderNarrative:
+    "Efren Macasaet brings enterprise engineering experience from Expedia Group, Walmart, CNN, and Shutterstock to AI-powered product development as a founder.",
+  whatIBuild:
+    "AI-powered products built from zero to production — including SearchStrata.com, HomeForPup.com, CoffeeBrewNotes.com, and ExpatHelpers.com.",
+  enterpriseExperience:
+    "Platform engineering and distributed systems experience at Expedia Group, Walmart, CNN, and Shutterstock — proven at enterprise scale.",
+  globalExperience:
+    "Building products and leading teams across Singapore, Hong Kong, London, Toronto, and Vancouver — adapting to diverse cultures, regulations, and user expectations.",
+  howIThink:
+    "Design principles centered on trusted AI, platform thinking, and systems that compound in value — guiding every product and architecture decision.",
+  writingInsights:
+    "Perspectives on trusted AI systems, platform unification, context-aware data ecosystems, governance, and long-term systems design.",
+  coreCompetencies:
+    "Deep expertise spanning AI system architecture, RAG, structured document intelligence, platform strategy, explainable AI design, and scalable SaaS architecture.",
+} as const;

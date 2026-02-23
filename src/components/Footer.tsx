@@ -33,7 +33,13 @@ export default function Footer() {
           <p className="text-xs text-[var(--color-text-secondary)]">
             &copy; {new Date().getFullYear()} Efren Macasaet. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <address className="flex gap-6 not-italic">
+            <a
+              href={`mailto:efren@iwoork.com`}
+              className="text-xs text-[var(--color-text-secondary)] transition-colors duration-200 hover:text-[var(--color-text-primary)]"
+            >
+              efren@iwoork.com
+            </a>
             <a
               href={SITE.linkedin}
               target="_blank"
@@ -50,7 +56,7 @@ export default function Footer() {
             >
               GitHub
             </a>
-          </div>
+          </address>
         </div>
       </div>
     </footer>

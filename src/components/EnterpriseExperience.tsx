@@ -1,4 +1,4 @@
-import { ENTERPRISE_EXPERIENCE } from "@/lib/constants";
+import { ENTERPRISE_EXPERIENCE, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function EnterpriseExperience() {
   return (
@@ -8,12 +8,12 @@ export default function EnterpriseExperience() {
           Enterprise Experience
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          Scale, complexity, and systems thinking — proven at the highest level.
+          {SECTION_SUMMARIES.enterpriseExperience}
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ENTERPRISE_EXPERIENCE.map((item) => (
-            <div
+            <article
               key={item.company}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
             >
@@ -23,7 +23,7 @@ export default function EnterpriseExperience() {
               <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                 {item.summary}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

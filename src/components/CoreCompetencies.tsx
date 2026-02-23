@@ -1,4 +1,4 @@
-import { COMPETENCIES } from "@/lib/constants";
+import { COMPETENCIES, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function CoreCompetencies() {
   return (
@@ -8,7 +8,7 @@ export default function CoreCompetencies() {
           Core Competencies
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          The intersection of AI engineering, platform thinking, and product execution.
+          {SECTION_SUMMARIES.coreCompetencies}
         </p>
 
         <div className="mt-12 flex flex-wrap gap-3">

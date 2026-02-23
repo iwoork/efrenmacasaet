@@ -1,4 +1,4 @@
-import { WRITING_TOPICS } from "@/lib/constants";
+import { WRITING_TOPICS, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function WritingInsights() {
   return (
@@ -8,14 +8,13 @@ export default function WritingInsights() {
           Writing &amp; Insights
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          Thinking on AI, platform strategy, and building systems that last.
+          {SECTION_SUMMARIES.writingInsights}
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {WRITING_TOPICS.map((topic) => (
-            <a
+            <article
               key={topic.title}
-              href={topic.href}
               className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
             >
               <h3 className="text-base font-semibold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)]">
@@ -24,10 +23,13 @@ export default function WritingInsights() {
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                 {topic.summary}
               </p>
-              <span className="mt-4 inline-block text-sm text-[var(--color-accent-blue)]">
+              <a
+                href={topic.href}
+                className="mt-4 inline-block text-sm text-[var(--color-accent-blue)]"
+              >
                 Read &rarr;
-              </span>
-            </a>
+              </a>
+            </article>
           ))}
         </div>
       </div>

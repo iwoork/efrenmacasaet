@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { jsonLdGraph } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://efrenmacasaet.com"),
   title: "Efren Macasaet — AI Product & Engineering Leader",
   description:
     "AI product and engineering leader building intelligent systems at scale. Expertise in LLMs, RAG, AI agents, and scalable SaaS platforms. Enterprise experience at Expedia, Walmart, CNN, and Shutterstock. Now founding AI-powered products.",
@@ -25,6 +27,12 @@ export const metadata: Metadata = {
     "retrieval augmented generation",
     "AI infrastructure",
   ],
+  authors: [{ name: "Efren Macasaet", url: "https://efrenmacasaet.com" }],
+  creator: "Efren Macasaet",
+  publisher: "Efren Macasaet",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Efren Macasaet — AI Product & Engineering Leader",
     description:
@@ -44,32 +52,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Efren Macasaet",
-  jobTitle: "AI Product & Engineering Leader",
-  description:
-    "AI product and engineering leader building intelligent systems at scale. Expertise in LLMs, RAG, AI agents, and scalable SaaS platforms.",
-  url: "https://efrenmacasaet.com",
-  sameAs: [
-    "https://linkedin.com/in/efrenmacasaet",
-    "https://github.com/efrenmacasaet",
-  ],
-  knowsAbout: [
-    "AI System Architecture",
-    "Large Language Models",
-    "Retrieval-Augmented Generation",
-    "AI Agents",
-    "Generative AI",
-    "AI Product Management",
-    "Platform Strategy",
-    "Scalable SaaS Architecture",
-    "Machine Learning Engineering",
-    "Natural Language Processing",
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -78,9 +60,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="me" href="https://linkedin.com/in/efrenmacasaet" />
+        <link rel="me" href="https://github.com/efrenmacasaet" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
         />
       </head>
       <body>{children}</body>

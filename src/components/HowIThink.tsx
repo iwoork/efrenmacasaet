@@ -1,4 +1,4 @@
-import { PRINCIPLES } from "@/lib/constants";
+import { PRINCIPLES, SECTION_SUMMARIES } from "@/lib/constants";
 
 export default function HowIThink() {
   return (
@@ -8,7 +8,7 @@ export default function HowIThink() {
           How I Think
         </h2>
         <p className="mt-4 text-base text-[var(--color-text-secondary)]">
-          Principles that guide every system I design and every product I build.
+          {SECTION_SUMMARIES.howIThink}
         </p>
 
         <div className="mt-12 space-y-6">

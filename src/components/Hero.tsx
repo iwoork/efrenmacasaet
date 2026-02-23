@@ -4,6 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
+      aria-label="Efren Macasaet — AI Product & Engineering Leader"
       className="relative flex min-h-screen items-center justify-center px-6"
     >
       <div className="mx-auto max-w-4xl text-center">
