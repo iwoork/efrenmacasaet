@@ -81,6 +81,18 @@ export const PROJECTS = [
     ],
     role: "Founder & Product Architect",
   },
+  {
+    name: "ExpatHelpers.com",
+    url: "https://expathelpers.com",
+    description:
+      "Resource platform helping expats navigate relocation, legal, and lifestyle challenges abroad.",
+    capabilities: [
+      "Curated relocation guides and country-specific resources",
+      "Community-driven advice and local expert connections",
+      "Practical tools for visa, housing, and cost-of-living planning",
+    ],
+    role: "Founder & Product Architect",
+  },
 ] as const;
 
 export const ENTERPRISE_EXPERIENCE = [
