@@ -58,7 +58,7 @@ export const PROJECTS = [
     name: "HomeForPup.com",
     url: "https://homeforpup.com",
     description:
-      "Community-driven platform for pet owners and breeders.",
+      "The AI platform for responsible dog breeders.",
     capabilities: [
       "Product-first marketplace thinking",
       "Community design",
@@ -186,7 +186,7 @@ export const FAQ_ITEMS = [
   {
     question: "What products has Efren Macasaet built?",
     answer:
-      "Efren has founded and built several AI-powered products: SearchStrata.com, an AI-powered strata document analysis platform; HomeForPup.com, a community-driven platform for pet owners and breeders; CoffeeBrewNotes.com, a mobile-first brewing journal and analytics platform; and ExpatHelpers.com, a resource platform for expats navigating relocation abroad.",
+      "Efren has founded and built several AI-powered products: SearchStrata.com, an AI-powered strata document analysis platform; HomeForPup.com, the AI platform for responsible dog breeders; CoffeeBrewNotes.com, a mobile-first brewing journal and analytics platform; and ExpatHelpers.com, a resource platform for expats navigating relocation abroad.",
   },
   {
     question: "What is his approach to AI development?",

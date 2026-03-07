@@ -73,7 +73,7 @@ An AI-powered strata (condominium) document analysis platform designed to help b
 
 ### HomeForPup.com
 
-A community-driven platform for pet owners and breeders.
+The AI platform for responsible dog breeders.
 
 **Focus:**
 
