@@ -82,6 +82,20 @@ export const PROJECTS = [
     role: "Founder & Product Architect",
   },
   {
+    name: "ComposeGTM.com",
+    url: "https://composegtm.com",
+    description:
+      "AI-powered platform that transforms a single business description into a complete go-to-market strategy with channel recommendations, budget allocation, and ready-to-execute content in minutes.",
+    capabilities: [
+      "AI-generated GTM strategy from a simple text prompt",
+      "Multi-channel content creation — blog, email, social, video, and ads",
+      "Autonomous AI agents for each marketing channel",
+      "Integration with 15+ platforms including Google Ads, Meta, Mailchimp, and WordPress",
+      "Budget allocation, Gantt timeline scheduling, and performance analytics",
+    ],
+    role: "Founder & Product Architect",
+  },
+  {
     name: "ExpatHelpers.com",
     url: "https://expathelpers.com",
     description:
@@ -186,7 +200,7 @@ export const FAQ_ITEMS = [
   {
     question: "What products has Efren Macasaet built?",
     answer:
-      "Efren has founded and built several AI-powered products: SearchStrata.com, an AI-powered strata document analysis platform; HomeForPup.com, the AI platform for responsible dog breeders; CoffeeBrewNotes.com, a mobile-first brewing journal and analytics platform; and ExpatHelpers.com, a resource platform for expats navigating relocation abroad.",
+      "Efren has founded and built several AI-powered products: SearchStrata.com, an AI-powered strata document analysis platform; HomeForPup.com, the AI platform for responsible dog breeders; ComposeGTM.com, an AI-powered go-to-market strategy and content platform; CoffeeBrewNotes.com, a mobile-first brewing journal and analytics platform; and ExpatHelpers.com, a resource platform for expats navigating relocation abroad.",
   },
   {
     question: "What is his approach to AI development?",
@@ -219,7 +233,7 @@ export const SECTION_SUMMARIES = {
   founderNarrative:
     "Efren Macasaet brings enterprise engineering experience from Expedia Group, Walmart, CNN, and Shutterstock to AI-powered product development as a founder.",
   whatIBuild:
-    "AI-powered products built from zero to production — including SearchStrata.com, HomeForPup.com, CoffeeBrewNotes.com, and ExpatHelpers.com.",
+    "AI-powered products built from zero to production — including SearchStrata.com, HomeForPup.com, ComposeGTM.com, CoffeeBrewNotes.com, and ExpatHelpers.com.",
   enterpriseExperience:
     "Platform engineering and distributed systems experience at Expedia Group, Walmart, CNN, and Shutterstock — proven at enterprise scale.",
   globalExperience:
