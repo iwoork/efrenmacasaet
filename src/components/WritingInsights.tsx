@@ -15,7 +15,8 @@ export default function WritingInsights() {
           {WRITING_TOPICS.map((topic) => (
             <article
               key={topic.title}
-              className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
+              className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition-all duration-200 hover:border-[var(--color-text-secondary)] hover:shadow-lg"
+              style={{ "--tw-shadow-color": "var(--color-shadow)" } as React.CSSProperties}
             >
               <h3 className="text-base font-semibold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)]">
                 {topic.title}
@@ -25,7 +26,7 @@ export default function WritingInsights() {
               </p>
               <a
                 href={topic.href}
-                className="mt-4 inline-block text-sm text-[var(--color-accent-blue)]"
+                className="mt-4 inline-block text-sm text-[var(--color-accent-blue)] transition-colors duration-200 hover:underline"
               >
                 Read &rarr;
               </a>

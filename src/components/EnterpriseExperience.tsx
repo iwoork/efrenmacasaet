@@ -15,7 +15,8 @@ export default function EnterpriseExperience() {
           {ENTERPRISE_EXPERIENCE.map((item) => (
             <article
               key={item.company}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
+              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-all duration-200 hover:border-[var(--color-text-secondary)] hover:shadow-lg"
+              style={{ "--tw-shadow-color": "var(--color-shadow)" } as React.CSSProperties}
             >
               <h3 className="text-lg font-semibold text-[var(--color-accent)]">
                 {item.company}

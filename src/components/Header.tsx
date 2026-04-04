@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { SITE } from "@/lib/constants";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const NAV_LINKS = [
   { label: "Work", href: "#what-i-build" },
@@ -76,7 +77,7 @@ export default function Header() {
           {SITE.name}
         </a>
 
-        {/* Desktop nav links */}
+        {/* Desktop nav links + theme toggle */}
         <div className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <a
@@ -91,34 +92,38 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile hamburger button */}
-        <button
-          type="button"
-          onClick={() => setMobileOpen((prev) => !prev)}
-          className="relative z-50 flex h-8 w-8 items-center justify-center md:hidden"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          aria-expanded={mobileOpen}
-        >
-          <div className="flex w-5 flex-col gap-[5px]">
-            <span
-              className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
-                mobileOpen ? "translate-y-[6.5px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
-                mobileOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
-                mobileOpen ? "-translate-y-[6.5px] -rotate-45" : ""
-              }`}
-            />
-          </div>
-        </button>
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            onClick={() => setMobileOpen((prev) => !prev)}
+            className="relative z-50 flex h-8 w-8 items-center justify-center"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+          >
+            <div className="flex w-5 flex-col gap-[5px]">
+              <span
+                className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
+                  mobileOpen ? "translate-y-[6.5px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
+                  mobileOpen ? "opacity-0" : ""
+                }`}
+              />
+              <span
+                className={`block h-[1.5px] w-full bg-[var(--color-text-primary)] transition-all duration-300 ${
+                  mobileOpen ? "-translate-y-[6.5px] -rotate-45" : ""
+                }`}
+              />
+            </div>
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu overlay */}

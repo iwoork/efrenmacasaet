@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { jsonLdGraph } from "@/lib/jsonld";
 
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://efrenmacasaet.com"),
   title: "Efren Macasaet — AI Product & Engineering Leader",
@@ -58,8 +60,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="me" href="https://linkedin.com/in/efrenmacasaet" />
         <link rel="me" href="https://github.com/efrenmacasaet" />
         <script

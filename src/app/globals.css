@@ -1,16 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color Palette — Dark Theme */
-  --color-bg: #0A0A0A;
-  --color-surface: #141414;
-  --color-surface-hover: #1A1A1A;
-  --color-border: #262626;
-  --color-text-primary: #EDEDED;
-  --color-text-secondary: #A1A1A1;
-  --color-accent: #FFFFFF;
-  --color-accent-blue: #3B82F6;
-
   /* Typography */
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
@@ -20,6 +10,32 @@
   --animate-fade-in-up-delay-1: fade-in-up 0.6s ease-out 0.15s forwards;
   --animate-fade-in-up-delay-2: fade-in-up 0.6s ease-out 0.3s forwards;
   --animate-fade-in-up-delay-3: fade-in-up 0.6s ease-out 0.45s forwards;
+}
+
+/* Light theme (default) */
+:root {
+  --color-bg: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F4F4F5;
+  --color-border: #E4E4E7;
+  --color-text-primary: #18181B;
+  --color-text-secondary: #71717A;
+  --color-accent: #09090B;
+  --color-accent-blue: #2563EB;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark theme */
+.dark {
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-hover: #1A1A1A;
+  --color-border: #262626;
+  --color-text-primary: #EDEDED;
+  --color-text-secondary: #A1A1A1;
+  --color-accent: #FFFFFF;
+  --color-accent-blue: #3B82F6;
+  --color-shadow: rgba(0, 0, 0, 0.4);
 }
 
 @keyframes fade-in {
@@ -45,6 +61,11 @@
 /* Base styles */
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {
@@ -53,6 +74,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Scroll reveal animation — applied via JS */
@@ -75,5 +97,5 @@ section[id] {
 /* Selection color */
 ::selection {
   background-color: var(--color-accent-blue);
-  color: var(--color-accent);
+  color: #FFFFFF;
 }

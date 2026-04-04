@@ -15,7 +15,8 @@ export default function WhatIBuild() {
           {PROJECTS.map((project) => (
             <article
               key={project.name}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-colors duration-200 hover:border-[var(--color-text-secondary)]"
+              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 transition-all duration-200 hover:border-[var(--color-text-secondary)] hover:shadow-lg"
+              style={{ "--tw-shadow-color": "var(--color-shadow)" } as React.CSSProperties}
             >
               <div className="flex items-center justify-between">
                 <h3
@@ -28,7 +29,7 @@ export default function WhatIBuild() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[var(--color-accent-blue)] hover:underline"
+                  className="text-sm text-[var(--color-accent-blue)] transition-colors duration-200 hover:underline"
                 >
                   Visit &rarr;
                 </a>
