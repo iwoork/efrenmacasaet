@@ -31,9 +31,9 @@ export const FOUNDER_NARRATIVE = {
   narrative:
     "Inside these environments, I led large-scale system initiatives, solved complex platform challenges, and aligned cross-functional teams.",
   founderQualities: [
-    "High-trust",
-    "Explainable",
-    "Structured",
+    "Production-ready",
+    "End-to-end",
+    "Enterprise-grade",
     "Scalable from day one",
   ],
 } as const;
@@ -140,11 +140,11 @@ export const GLOBAL_EXPERIENCE = {
 } as const;
 
 export const PRINCIPLES = [
-  "AI must increase clarity, not hallucinate confidence.",
-  "Trust is the foundation of intelligent systems.",
-  "Platforms outperform isolated tools.",
-  "Scale exposes architectural shortcuts.",
-  "Founder velocity comes from technical depth.",
+  "Turn domain complexity into simple answers.",
+  "Let AI agents do the work end-to-end.",
+  "Build for production from day one.",
+  "Apply enterprise rigor at startup speed.",
+  "Solve the whole problem, not a slice of it.",
 ] as const;
 
 export const WRITING_TOPICS = [
@@ -205,7 +205,7 @@ export const FAQ_ITEMS = [
   {
     question: "What is his approach to AI development?",
     answer:
-      "Efren builds AI systems that are high-trust, explainable, and structured. He believes AI must increase clarity rather than hallucinate confidence, and designs citation-backed responses for trust and explainability. Every system is architected to be scalable from day one.",
+      "Efren builds AI systems that turn domain complexity into simple answers. He designs autonomous AI agents that do the work end-to-end, applies enterprise rigor at startup speed, and builds for production from day one. Every product solves the whole problem, not a slice of it.",
   },
   {
     question: "Where has Efren Macasaet worked?",
@@ -239,7 +239,7 @@ export const SECTION_SUMMARIES = {
   globalExperience:
     "Building products and leading teams across Singapore, Hong Kong, London, Toronto, and Vancouver — adapting to diverse cultures, regulations, and user expectations.",
   howIThink:
-    "Design principles centered on trusted AI, platform thinking, and systems that compound in value — guiding every product and architecture decision.",
+    "Design principles centered on turning complexity into clarity, autonomous AI agents, and production-ready execution at startup speed.",
   writingInsights:
     "Perspectives on trusted AI systems, platform unification, context-aware data ecosystems, governance, and long-term systems design.",
   coreCompetencies:
