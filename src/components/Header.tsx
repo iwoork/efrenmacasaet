@@ -142,30 +142,29 @@ export default function Header() {
       </nav>
 
       {/* Mobile menu overlay */}
-      <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[var(--color-bg)]/95 backdrop-blur-lg transition-all duration-300 md:hidden ${
-          mobileOpen
-            ? "pointer-events-auto opacity-100"
-            : "pointer-events-none opacity-0"
-        }`}
-      >
-        <div className="flex flex-col items-center gap-8">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={handleNavClick}
-              className={`text-2xl font-medium transition-colors duration-200 ${
-                activeSection === link.href
-                  ? "text-[var(--color-accent)]"
-                  : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
-              }`}
-            >
-              {link.label}
-            </a>
-          ))}
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 z-40 flex flex-col items-center justify-center md:hidden"
+          style={{ backgroundColor: "var(--color-bg)" }}
+        >
+          <div className="flex flex-col items-center gap-8">
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={handleNavClick}
+                className={`text-2xl font-medium transition-colors duration-200 ${
+                  activeSection === link.href
+                    ? "text-[var(--color-accent)]"
+                    : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
+                }`}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
