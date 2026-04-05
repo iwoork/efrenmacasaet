@@ -62,10 +62,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 right-0 left-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-lg transition-all duration-300 md:border-transparent md:bg-transparent md:backdrop-blur-none ${
         scrolled || mobileOpen
-          ? "border-b border-[var(--color-border)] bg-[var(--color-bg)]/80 backdrop-blur-lg"
-          : "bg-transparent"
+          ? "md:border-[var(--color-border)] md:bg-[var(--color-bg)]/80 md:backdrop-blur-lg"
+          : ""
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
