@@ -72,9 +72,24 @@ export default function Header() {
         {/* Logo / Name */}
         <a
           href="#hero"
-          className="text-sm font-semibold tracking-tight text-[var(--color-accent)] transition-colors duration-200 hover:text-[var(--color-text-primary)]"
+          className="flex items-center gap-2.5 transition-colors duration-200 group"
         >
-          {SITE.name}
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="text-[var(--color-accent-blue)] transition-colors duration-200"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 3h16v3H8v4.5h10v3H8V18h12v3H4V3z"
+              fill="currentColor"
+            />
+          </svg>
+          <span className="text-sm font-semibold tracking-tight text-[var(--color-accent)] group-hover:text-[var(--color-text-primary)]">
+            {SITE.name}
+          </span>
         </a>
 
         {/* Desktop nav links + theme toggle */}
