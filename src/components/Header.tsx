@@ -75,17 +75,38 @@ export default function Header() {
           className="flex items-center gap-2.5 transition-colors duration-200 group"
         >
           <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
+            width="28"
+            height="28"
+            viewBox="0 0 64 64"
             fill="none"
-            className="text-[var(--color-accent-blue)] transition-colors duration-200"
+            className="transition-colors duration-200"
             aria-hidden="true"
           >
-            <path
-              d="M4 3h16v3H8v4.5h10v3H8V18h12v3H4V3z"
-              fill="currentColor"
-            />
+            {/* Head shape */}
+            <ellipse cx="32" cy="30" rx="16" ry="18" fill="var(--color-text-secondary)" opacity="0.25" />
+            <ellipse cx="32" cy="30" rx="15" ry="17" fill="var(--color-bg)" />
+            {/* Face skin */}
+            <ellipse cx="32" cy="32" rx="13" ry="14" fill="var(--color-text-secondary)" opacity="0.15" />
+            {/* Spiky hair */}
+            <path d="M17 25c0-10 7-17 15-17s15 7 15 17" fill="var(--color-accent)" />
+            <path d="M17 25c1-4 3-8 5-10l-2-3 5 2c2-3 4-5 7-6l-1-3 4 3c2-1 5-2 7-1l1-3 1 4c3 1 5 3 6 5l3-1-2 4c2 3 3 6 3 9z" fill="var(--color-accent)" />
+            {/* Ears */}
+            <ellipse cx="18" cy="30" rx="2.5" ry="3.5" fill="var(--color-text-secondary)" opacity="0.2" />
+            <ellipse cx="46" cy="30" rx="2.5" ry="3.5" fill="var(--color-text-secondary)" opacity="0.2" />
+            {/* Sunglasses */}
+            <rect x="20" y="27" width="11" height="7" rx="2" fill="var(--color-accent)" opacity="0.85" />
+            <rect x="33" y="27" width="11" height="7" rx="2" fill="var(--color-accent)" opacity="0.85" />
+            <path d="M31 30h2" stroke="var(--color-accent)" strokeWidth="1.5" />
+            <path d="M19 29h-1" stroke="var(--color-accent)" strokeWidth="1" />
+            <path d="M45 29h1" stroke="var(--color-accent)" strokeWidth="1" />
+            {/* Nose */}
+            <path d="M32 35v3.5" stroke="var(--color-text-secondary)" strokeWidth="1" strokeLinecap="round" opacity="0.4" />
+            {/* Slight smile */}
+            <path d="M28 41c2 2 6 2 8 0" stroke="var(--color-text-secondary)" strokeWidth="1" strokeLinecap="round" fill="none" opacity="0.5" />
+            {/* Goatee */}
+            <path d="M29 42c1 2 2 3 3 3s2-1 3-3" stroke="var(--color-accent)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.4" />
+            {/* Jaw line */}
+            <path d="M19 30c0 10 5 17 13 17s13-7 13-17" fill="none" stroke="var(--color-text-secondary)" strokeWidth="0.5" opacity="0.15" />
           </svg>
           <span className="text-sm font-semibold tracking-tight text-[var(--color-accent)] group-hover:text-[var(--color-text-primary)]">
             {SITE.name}
