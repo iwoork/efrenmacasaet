@@ -55,6 +55,20 @@ export const PROJECTS = [
     role: "Founder & Product Architect",
   },
   {
+    name: "ManageStrata.ca",
+    url: "https://managestrata.ca",
+    description:
+      "Cloud-based strata management platform for Canadian condominiums, combining BC compliance tracking, AI-powered document search, governance tools, and dual-fund financials.",
+    capabilities: [
+      "BC compliance engine tracking statutory deadlines and reserve fund contributions",
+      "Page-cited AI document search across bylaws, minutes, and studies",
+      "Governance and meeting tools — notice generation, quorum validation, e-voting, AI minute drafting",
+      "Dual-fund financials with owner ledgers, strata-fee billing, and Stripe payments",
+      "Assistive AI agents for deadline monitoring, overdue accounts, and maintenance triage",
+    ],
+    role: "Founder & Product Architect",
+  },
+  {
     name: "HomeForPup.com",
     url: "https://homeforpup.com",
     description:
